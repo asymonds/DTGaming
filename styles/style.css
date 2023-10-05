@@ -127,3 +127,24 @@ h1.hero {
   height: 120px;
   flex: 0 0 auto;
 }
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e7eb;
+  padding: 50px 80px;
+}
+
+.quote-text {
+  text-align: left;
+  font-size: 36px;
+  font-weight: 100;
+  font-style: italic;
+  color: #1f2937;
+}
+
+.quote-who {
+  text-align: right;
+  font-weight: 700;
+  font-size: 16px;
+}
