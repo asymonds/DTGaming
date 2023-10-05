@@ -25,7 +25,7 @@ h1 {
   color: #efe7eb;
   align-items: baseline;
   gap: 20px;
-  padding: 10px 50px;
+  padding: 10px 80px;
 }
 
 .nav-item > a {
@@ -52,7 +52,7 @@ h1 {
   flex-wrap: wrap;
 
   /* General properties*/
-  padding: 50px 50px;
+  padding: 50px 80px;
   background-color: #1f2937;
   color: #e9faf8;
 }
@@ -105,5 +105,25 @@ h1.hero {
 /* INFORMATION SECTION */
 #info {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 0px 80px;
+}
+
+.info-box {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* border: 3px solid blue; */
+  /* border-radius: 15px; */
+  /* width: 40px; */
+  height: 150px;
+}
+
+.info-img {
+  height: 120px;
+  flex: 0 0 auto;
 }
