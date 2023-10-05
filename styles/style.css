@@ -1,7 +1,22 @@
+/* GENERAL SECTION */
 * {
   box-sizing: border-box;
   margin: 0;
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f2937;
+  text-align: center;
+  padding: 50px 0px;
+}
+
+/* NAVIGATION SECTION */
 
 #nav-bar {
   display: flex;
@@ -10,7 +25,7 @@
   color: #efe7eb;
   align-items: baseline;
   gap: 20px;
-  padding: 10px;
+  padding: 10px 50px;
 }
 
 .nav-item > a {
@@ -22,26 +37,33 @@
 .nav-item.nav-logo {
   flex: 2 1 auto;
   margin-right: auto;
-  padding-left: 50px;
+  padding: 0px 0px;
   font-size: 24px;
   color: #e9faf8;
 }
 
+/* HERO SECTION */
 #hero {
+  /* Flex properties */
   display: flex;
-  gap: 20px;
-  align-items: baseline;
-  /* margin-left: 50px; */
-  padding: 50px 10px;
+  gap: 40px;
+  align-items: center;
+  /* justify-items: center; */
+  flex-wrap: wrap;
+
+  /* General properties*/
+  padding: 50px 50px;
   background-color: #1f2937;
   color: #e9faf8;
 }
 
 .hero-item {
-  flex: 1 1 auto;
+  flex: 1 0 250px;
+  /* flex-basis: 250px; */
 }
+
 .hero-item.hero-card {
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 
 .hero-item > button {
@@ -50,4 +72,38 @@
   font-weight: 800;
   border-radius: 10px;
   padding: 5px 20px;
+  margin-top: 15px;
+  border: 2px solid black;
+}
+.hero-item > button:hover {
+  background-color: #5273a8;
+}
+
+.hero-img {
+  height: 250px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.hero {
+  text-align: left;
+  padding: 5px 0px;
+}
+
+p.hero {
+  font-size: 18px;
+  font-weight: 100;
+  color: #e5e7eb;
+}
+
+h1.hero {
+  font-size: 48px;
+  font-weight: 700;
+  color: #f9faf8;
+}
+
+/* INFORMATION SECTION */
+#info {
+  display: flex;
+  justify-content: space-between;
 }
